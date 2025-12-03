@@ -1,5 +1,3 @@
-!pip install streamlit
-
 import streamlit as st
 import google.generativeai as genai
 import PyPDF2
@@ -203,7 +201,7 @@ def analyze_case(case_description, ppc_text, crpc_text, lang='ur'):
 def main():
     st.set_page_config(layout="wide")
     st.title("🇵🇰 Pakistan Criminal Law Chatbot ⚖️")
-    st.markdown("Created by: Muhammad Ali Abbas")
+    st.markdown("Created by: Muhammad Ali Abbas -NED University")
     st.markdown("---")
 
     st.sidebar.header("Upload Law Files")
@@ -312,4 +310,5 @@ def main():
     st.write("شکریہ! اللہ حافظ۔")
 
 if __name__ == "__main__":
+
     main()
